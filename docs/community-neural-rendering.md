@@ -20,9 +20,9 @@ into this repository:
 
 - https://github.com/jlrouzies-fr/DLSS5-Feeder
 
-The feeder documentation currently requires exactly one neural-rendering
-consumer. Follow its current recommendation; do not install multiple consumers
-beside each other.
+As checked on 2026-10-12, the feeder requires exactly one neural-rendering
+consumer. Re-check its current instructions before installation and do not load
+multiple consumers together.
 
 ## Motion vectors and depth
 
@@ -35,8 +35,8 @@ experimentation, but it is not equivalent to a native engine integration.
 Do not hard-code the motion-vector provider globally. `DLSS5_MV_PROVIDER` is an
 effect preprocessor definition owned by `DLSS5_Feed.fx`. Let the feeder installer
 select its supported default unless there is a specific reason to override it.
-At the time of this note, the feeder documents LumeniteFX Kernel as its default
-provider (`DLSS5_MV_PROVIDER=3`) and still supports VORT as provider `2`.
+As checked on 2026-10-12, its installer defaults to LumeniteFX Kernel
+(`DLSS5_MV_PROVIDER=3`); VORT remains supported as provider `2`.
 
 If the RenoDX neural-rendering consumer is used, the feeder already manages its
 required compatibility flags when they are unset (`EnableHooks=2`,
@@ -64,7 +64,9 @@ default profile.
 NVIDIA's DLSS 5 developer guidance describes native 3D-guided neural rendering as
 using engine-provided motion vectors and other engine context. That remains the
 higher-quality architectural target if this port ever gains a maintained native
-integration.
+integration:
+
+- https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities
 
 ## Contribution provenance
 
