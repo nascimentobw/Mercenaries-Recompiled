@@ -11,6 +11,8 @@
 - [Contributing](../CONTRIBUTING.md): change boundaries and validation commands.
 - [Dependencies and notices](dependencies.md), [release maintenance](release-maintenance.md),
   and [launcher resources](../ports/mercenaries/resources/launcher/README.md).
+- [Community DLSS 5 neural-rendering notes](community-neural-rendering.md):
+  unsupported external experimentation, required inputs, and validation limits.
 
 - [Source distribution and GitHub import](source-distribution.md): package contents,
   checksums, import commands, and repeatable source exports.
